@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  font-family: Sawarabi Gothic, sans-serif;
+  color: #737ff7;
+  display: block;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+      115deg,
+      rgba(217, 219, 197, 0.7),
+      rgba(217, 219, 197, 0.7)
+    ),
+    url("https://i.pinimg.com/originals/8d/b8/29/8db8297bd9670e61a33aad408d893042.jpg");
+}
+
+h1 {
+  font-size: 3rem;
+  background-color: #ffdd40;
+  margin: 0;
+  text-align: center;
+  padding: 0.15em 0;
+  color: #2a2b30;
+}
+
+#description {
+  font-size: 1.125rem;
+  background-color: #ffdd40;
+  text-align: center;
+  max-width: 50%;
+  padding: 0.25em 2em 0.25em 2em;
+  margin: 1em auto;
+}
+
+#survey-form {
+  max-width: 50%;
+  font-size: 1.125rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffdd40;
+  padding: 1.5em 2em 0.25em 2em;
+  border-radius: 0.25rem;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+  font-size: 1.125rem;
+  color: #737ff7;
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  border: 1px solid #656565;
+  margin: 1em auto 2em;
+}
+
+#submit:hover {
+  color: #db007d;
+  border: 1px solid #737ff7;
+}
+
+.question-header {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.125em;
+}
+
+.input-field {
+  font-size: 1rem;
+  font-family: Sawarabi Gothic;
+  font-weight: 10;
+  border-radius: 5px;
+  border: 1px solid #656565;
+}
+
+select,
+textarea {
+  color: #656565;
+}
+
+.input-field:focus {
+  border: 1px solid #737ff7;
+  outline: 0;
+}

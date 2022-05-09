@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTS Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">BTS Survey Form</h1>
+      <p id="description">
+        <i>Thank you for taking the time to help us get to know you better</i>
+      </p>
+      <form id="survey-form">
+        <div class="question-container">
+          <label id="name-label" for="name" class="question-header">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="question-container">
+          <label id="email-label" for="email" class="question-header"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="input-field"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="question-container">
+          <label id="number-label" for="number" class="question-header"
+            >Age</label
+          >
+          <input
+            type="number"
+            id="number"
+            class="input-field"
+            placeholder="Enter your age"
+            min="7"
+            max="99"
+          />
+        </div>
+        <div class="question-container">
+          <label id="army-label" class="question-header"
+            >Do you consider yourself an ARMY?</label
+          >
+          <label for="yes">
+            <input id="yes" type="radio" name="army" value="yes" />Yes
+          </label>
+          <label for="no">
+            <input id="no" type="radio" name="army" value="no" />No
+          </label>
+        </div>
+        <div class="question-container">
+          <label id="dropdown-label" class="question-header"
+            >Who's your favourite member of BTS?</label
+          >
+          <select name="member" class="input-field" id="dropdown">
+            <option disabled selected value>Select your choice</option>
+            <option value="jin">Jin</option>
+            <option value="suga">Suga</option>
+            <option value="j-hope">J-Hope</option>
+            <option value="rm">RM</option>
+            <option value="jimin">Jimin</option>
+            <option value="v">V</option>
+            <option value="jungkook">Jungkook</option>
+            <option value="ot7">OT7</option>
+          </select>
+        </div>
+        <div class="question-container">
+          <label id="eras-label" class="question-header"
+            >Which BTS era do you like the most?</label
+          >
+
+          <label for="school trilogy">
+            <input
+              id="school trilogy"
+              type="checkbox"
+              name="eras"
+              value="school trilogy"
+            />School Trilogy (2013-2014)
+          </label>
+          <label for="youth trilogy">
+            <input
+              id="youth trilogy"
+              type="checkbox"
+              name="eras"
+              value="youth trilogy"
+            />Youth Trilogy (2015-2016)
+          </label>
+          <label for="wings">
+            <input id="wings" type="checkbox" name="eras" value="wings" />Wings
+            (2016-2017)
+          </label>
+          <label for="love yourself">
+            <input
+              id="love yourself"
+              type="checkbox"
+              name="eras"
+              value="love yourself"
+            />Love Yourself (2017-2018)
+          </label>
+          <label for="map of the soul">
+            <input
+              id="map of the soul"
+              type="checkbox"
+              name="eras"
+              value="map of the soul"
+            />Map of the Soul (2019-2010)
+          </label>
+          <label for="be">
+            <input id="be" type="checkbox" name="eras" value="be" />BE
+            (2020-2021)
+          </label>
+        </div>
+        <div class="question-container">
+          <label id="songs-label" class="question-header"
+            >What are your favourite BTS' songs?</label
+          >
+          <textarea
+            id="songs"
+            class="input-field"
+            name="songs"
+            rows="4"
+            cols="50"
+          >
+ Please write down your Top 5
+  </textarea
+          >
+        </div>
+        <button id="submit" type="submit"><strong>Submit</strong></button>
+      </form>
+      <br />
+    </main>
+  </body>
+</html>
