@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTS Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+        <main>
+      <header id="header" class="header container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/BTS_logo_%282017%29.png" alt="BTS' logo" width="80" height="80" id="header-img" class="header-img">
+        <nav id="nav-bar" class="nav-bar">
+          <ul class="nav-bar__links">
+            <li><a href="#video" class="nav-link">Who is BTS</a></li>
+            <li><a href="#albums" class="nav-link">Albums</a></li>
+            <li><a href="#submit" class="nav-link">Get a 5% Discount</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <div id="main-content" class="container">
+        <div class="container">
+          <section id="discount">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <div class="discount">
+                <label class="title">5% discount for your first order</label>
+                <input class="description email-container" id="email" type="email" name="email" placeholder="Enter your email address">
+                <input class="button" id="submit" type="submit" value="Get the discount">
+              </div>
+            </form>
+          </section>
+        </div>
+        <section id="video-section" class="video-section">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/xu0IfBvZMRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="albums" class="products">
+          <div class="album">
+            <h2 class="title">MAP OF THE SOUL: 7</h2>
+            <h3 class="price">$35<h3>
+                <p class="description">This is the fourth studio album by South Korean boy band BTS. The album was released on February 21, 2020, by Big Hit Entertainment. Described by BTS as "deeply personal", the album is influenced by their journey and growth of seven years since their debut. Map of the Soul: 7 has been described as a pop, R&B, and hip-hop record that contains influences from urban contemporary genres like rock, trap, and EDM. Lyrically, it touches upon themes of reflection, introspection, and self-acceptance.</p>
+          </div>
+          <div class="album">
+            <h2 class="title">BE</h2>
+            <h3 class="price">$45<h3>
+                <p class="description">This is the fifth studio album by South Korean boy band BTS. It was released on November 20, 2020, through Big Hit Entertainment, nine months after its predecessor, Map of the Soul: 7 (2020). Created in response to the ongoing COVID-19 pandemic, BE was inspired by BTS' perspective of life during the pandemic. The record sees the band members contributing to various aspects of album-making process including songwriting, development, production, and visual design.</p>
+          </div>
+          <div class="album">
+            <h2 class="title">LOVE YOURSELF</h2>
+            <h3 class="price">$25<h3>
+                <p class="description">This is the third compilation album by South Korean boy band BTS. The album was released on August 24, 2018, by Big Hit Entertainment and is available in four different versions: S, E, L, and F. The album contains twenty-five tracks, including seven new songs, with the track "Idol" serving as the lead single. Most tracks are from Love Yourself: Her, and Love Yourself: Tear, including some remixes. The album debuted at number one in South Korea, Canada, Japan and the United States.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
