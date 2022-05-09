@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Technical Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+  <body>
+    <main id="main-doc" class="flex">
+      <div class="container--nav">
+        <nav id="navbar" class="navbar">
+          <header class="nav__title">CSS Documentation</header>
+          <a class="nav-link" href="#CSS_Selectors">CSS Selectors</a>
+          <a class="nav-link" href="#CSS_Backgrounds">CSS Backgrounds</a>
+          <a class="nav-link" href="#CSS_Border_Style">CSS Border Style</a>
+          <a class="nav-link" href="#CSS_Margins">CSS Margins</a>
+          <a class="nav-link" href="#CSS_Padding">CSS Padding</a>
+        </nav>
+      </div>
+    
+      <div class="container container--main">
+        <section class="main-section" id="CSS_Selectors">
+          <header class="main-section__title">CSS Selectors</header>
+          <article>
+            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+            <p>The most basic simple CSS selectors are:</p>
+            <ul>
+              <li>The CSS element Selector</li>
+              <li>The CSS id Selector</li>
+              <li>The CSS class Selector</li>
+            </ul>
+          </article>
+          <div class="sub-section">
+            <h3>The CSS element Selector</h3>
+            <p>The element selector selects HTML elements based on the element name.</p>
+            <p>For example, here, all &#x3c;p&#x3e; elements on the page will be center-aligned, with a red text color:</p>
+            <pre>
+          <code>
+          p { 
+            &nbsp;&nbsp;text-align: center; 
+            &nbsp;&nbsp;color: red; 
+          }
+          </code>
+          </pre>
+          </div>
+          <div class="sub-section">
+            <h3>The CSS id Selector</h3>
+            <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+            <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+            <p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+            <p>For example, the CSS rule below will be applied to the HTML element with id="para1": </p>
+            <pre>
+          <code>
+          #para1 {
+            &nbsp;&nbsp;text-align: center; 
+            &nbsp;&nbsp;color: red; 
+          }
+          </code>
+          </pre>
+          </div>
+          <div class="sub-section">
+            <h3>The CSS class Selector</h3>
+            <p>The class selector selects HTML elements with a specific class attribute.</p>
+            <p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+            <p>In the example below, all HTML elements with class="center" will be red and center-aligned:</p>
+            <pre>
+          <code>
+          .center {
+            &nbsp;&nbsp;text-align: center; 
+            &nbsp;&nbsp;color: red; 
+          }
+          </code>
+          </pre>
+          </div>
+        </section>
+        <section class="main-section" id="CSS_Backgrounds">
+          <header class="main-section__title">CSS Backgrounds</header>
+          <article>
+            <p>The CSS background properties are used to add background effects for elements.</p>
+            <p>In this chapter, you will learn about the following CSS background properties:</p>
+            <ul>
+              <li><code>background-color</code></li>
+              <li><code>background-image</code></li>
+              <li><code>background-repeat</code></li>
+            </ul>
+          </article>
+          <div class="sub-section">
+            <h3>CSS background-color</h3>
+            <p>The background-color property specifies the background color of an element.</p>
+            <p>The background color of a page is set like this:</p>
+            <pre>
+          <code>
+          body { 
+            &nbsp;&nbsp;background-color: lightblue; 
+          }
+          </code>
+          </pre>
+          </div>
+          <div class="sub-section">
+            <h3>CSS background-image</h3>
+            <p>The background-image property specifies an image to use as the background of an element.</p>
+            <p>By default, the image is repeated so it covers the entire element.</p>
+            <p>We can set the background image for a page as follows:</p>
+            <pre>
+          <code>
+          body {
+            &nbsp;&nbsp;background-image: url("paper.gif");
+          }
+          </code>
+          </pre>
+          </div>
+          <div class="sub-section">
+            <h3>CSS background-repeat</h3>
+            <p>By default, the background-image property repeats an image both horizontally and vertically.</p>
+            <p>This property has the following values:</p>
+            <pre>
+          <code>
+         background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit;
+          </code>
+          </pre>
+          </div>
+        </section>
+        <section class="main-section" id="CSS_Border_Style">
+          <header class="main-section__title">CSS Border Style</header>
+          <article>
+            <p>The <code>border-style</code> property specifies what kind of border to display.</p>
+            <p>The following values are the most used:</p>
+            <ul>
+              <li><code>dotted</code> - Defines a dotted border</li>
+              <li><code>solid</code> - Defines a solid border</li>
+              <li><code>double</code> - Defines a double border</li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="CSS_Margins">
+          <header class="main-section__title">CSS Margins</header>
+          <article>
+            <p>The CSS <code>margin</code> properties are used to create space around elements, outside of any defined borders.</p>
+            <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+          </article>
+        </section>
+        <section class="main-section" id="CSS_Padding">
+          <header class="main-section__title">CSS Padding</header>
+          <article>
+            <p>The CSS <code>padding</code> properties are used to generate space around an element's content, inside of any defined borders.</p>
+            <p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+          </article>
+        </section>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>
