@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #2a2b30;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+h2 {
+  color: #737ff7;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 1em;
+  padding-bottom: 0.1em;
+  border-bottom: 0.2rem solid #737ff7;
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+h3 {
+  padding: 1em;
+  margin: 0;
+  text-align: center;
+  background-color: #ffdd40;
+  color: #2a2b30;
+}
+
+p {
+  color: #ffdd40;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__link {
+  padding: 1.5em;
+}
+
+.container {
+  padding: 1.5em;
+  background-color: whitesmoke;
+}
+
+.container__nav {
+  background-color: #ffdd40;
+  top: 0;
+  position: sticky;
+}
+
+.container__welcome {
+  background-color: #737ff7;
+  color: whitesmoke;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4.5em;
+}
+
+.project-tile {
+}
+
+.button {
+  max-width: 15%;
+  margin: 2em auto;
+  background-color: #737ff7;
+  padding: 1em;
+  text-align: center;
+}
+
+.button-link {
+  color: whitesmoke;
+  font-family: Verdana, sans-serif;
+}
+
+@media (max-width: 1100px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-tile {
+    padding: 1em;
+  }
+}
